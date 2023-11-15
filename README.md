@@ -10,7 +10,7 @@ LineNavigator-Bot is an IoT project designed to autonomously navigate lines on t
 - [Contact](#contact)
 
 ## Introduction 🌟
-The LineNavigator-Bot is an autonomous robot that can follow a line on the ground while avoiding obstacles. It is a great project for learning about embedded systems, robotics, and sensor integration. This bot can be used in various applications, including warehouse automation, manufacturing, and educational purposes.
+The LineNavigator-Bot is an autonomous robot that can follow a line on the ground while avoiding obstacles. It is a great project for learning about embedded systems, robotics, and sensor integration.This bot can be used in various applications, including warehouse automation, manufacturing,and educational purposes.
 
 ## Components 🛠️
 - **Arduino Board**: The central microcontroller used to process inputs from sensors and control the motors.
