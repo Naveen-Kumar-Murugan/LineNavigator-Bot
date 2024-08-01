@@ -1,0 +1,45 @@
+# Algorithm
+Procedure LineNavigator_Bot() {
+    // Initialize components
+    Initialize Arduino board;
+    Initialize IR sensors;
+    Initialize SONAR sensor;
+    Initialize motors;
+    
+    // Main loop
+    While (power is on) {
+        // Read sensor inputs
+        leftIR = Read left IR sensor;
+        rightIR = Read right IR sensor;
+        centerIR = Read center IR sensor;
+        obstacleDistance = Read SONAR sensor;
+
+        // Line following logic
+        If (leftIR detects line) {
+            Turn slightly left;
+        }
+        Else If (rightIR detects line) {
+            Turn slightly right;
+        }
+        Else If (centerIR detects line) {
+            Move forward;
+        }
+        Else {
+            Stop and search for line again;
+        }
+
+        // Obstacle avoidance logic
+        If (obstacleDistance < defined threshold) {
+            Stop;
+            Execute obstacle avoidance maneuver;
+        }
+
+        // Obstacle avoidance maneuver
+        If (obstacleDistance still < defined threshold after stopping) {
+            Turn right or left to avoid obstacle;
+            Move forward after avoiding obstacle;
+        }
+        
+        // Repeat the process
+    }
+}

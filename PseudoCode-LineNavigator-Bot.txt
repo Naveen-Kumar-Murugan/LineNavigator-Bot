@@ -1,0 +1,14 @@
+Procedure LineNavigator_Bot()
+1. Start
+2. Initialize the Arduino board, IR sensors, SONAR sensor, and motors.
+3. Continuously read inputs from the IR sensors to detect the line.
+4. If the Black line is detected by the left IR sensor, adjust the bot to turn slightly left.
+5. If the line is detected by the right IR sensor, adjust the bot to turn slightly right.
+6. If no line is detected, stop the bot and prepare to search for the line again.
+7. Simultaneously, read the distance from the SONAR sensor to check for obstacles.
+8. If an obstacle is detected within a defined distance, stop the bot.
+9. Execute the obstacle avoidance maneuver by turning the bot right or left to avoid the obstacle.
+10. After avoiding the obstacle, return to line-following mode.
+11. Repeat the process of line detection and obstacle avoidance continuously.
+12. End
+
